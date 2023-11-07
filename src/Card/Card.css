@@ -1,0 +1,22 @@
+.fullCard {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 12px;
+  align-items: baseline;
+  justify-content: center;
+  margin: 10px;
+}
+
+.cardTitel {
+  font-size: 30px;
+}
+
+.cardLogo {
+  margin-left: 10px;
+  align-self: center;
+}
+
+.cardLink {
+  position: static;
+  margin-left: 10px;
+}
