@@ -5,12 +5,14 @@ import "./App.css";
 import { Hello } from "./Hello";
 import { Card } from "./Card/Card";
 import { Hooks } from "./Hooks/Hooks";
+import { InputFieldEffect } from "./InputField/InputFieldEffect";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <InputFieldEffect />
       <Hooks />
 
       <Card titel={"React"} link={"https://react.dev/"} logo={reactLogo} />
