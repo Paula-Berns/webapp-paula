@@ -6,15 +6,17 @@ import { Hello } from "./Hello";
 import { Card } from "./Card/Card";
 import { Hooks } from "./Hooks/Hooks";
 import { InputFieldEffect } from "./InputField/InputFieldEffect";
+import Menu from "./nav";
+//import Navbar from "./nav";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Menu />
       <InputFieldEffect />
       <Hooks />
-
       <Card titel={"React"} link={"https://react.dev/"} logo={reactLogo} />
       <Card titel={"Vite"} link={"https://vitejs.dev/"} logo={viteLogo} />
 

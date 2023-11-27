@@ -1,10 +1,35 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { InputFieldEffect } from "./InputField/InputFieldEffect.jsx";
+import { Menu } from "./nav.jsx";
+import { Card } from "./Card/Card.jsx";
+import { Hello } from "./Hello.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Menu />,
+    children: [
+      {
+        path: "/links",
+        element: <Card titel={"React"} link={"https://react.dev/"} />,
+      },
+      {
+        path: "/multiplier",
+        element: <InputFieldEffect />,
+      },
+      {
+        path: "/helloworld",
+        element: <Hello name={"World"} frage={"wie gehts?"} />,
+      },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
