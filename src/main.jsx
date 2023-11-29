@@ -4,8 +4,9 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { InputFieldEffect } from "./InputField/InputFieldEffect.jsx";
 import { Menu } from "./nav.jsx";
-import { Card } from "./Card/Card.jsx";
 import { Hello } from "./Hello.jsx";
+import { Cards } from "./Card/Cards.jsx";
+import { VacCards } from "./VacCard/VacCards.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/links",
-        element: <Card titel={"React"} link={"https://react.dev/"} />,
+        element: <Cards />,
       },
       {
         path: "/multiplier",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/helloworld",
         element: <Hello name={"World"} frage={"wie gehts?"} />,
+      },
+      {
+        path: "/vacation",
+        element: <VacCards />,
       },
     ],
   },

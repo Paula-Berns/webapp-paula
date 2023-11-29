@@ -16,6 +16,9 @@ export function Menu() {
           <li>
             <Link to="/helloworld">Hello World</Link>
           </li>
+          <li>
+            <Link to="/vacation">Vacation</Link>
+          </li>
         </ul>
       </nav>
       <Outlet />

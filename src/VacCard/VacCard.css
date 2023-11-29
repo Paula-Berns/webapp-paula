@@ -1,0 +1,19 @@
+.vacCardTitel {
+  font-weight: bold;
+}
+
+.vacButton {
+  background-color: #f69c00;
+  color: #5b0000;
+}
+
+.fullVacCard {
+  display: flex;
+  justify-content: center;
+}
+
+.bothButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
