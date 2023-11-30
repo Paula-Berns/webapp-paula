@@ -5,6 +5,9 @@
 .vacButton {
   background-color: #f69c00;
   color: #5b0000;
+  margin: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .fullVacCard {
@@ -15,5 +18,5 @@
 .bothButtons {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin: 10px;
 }
