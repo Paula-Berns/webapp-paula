@@ -7,6 +7,7 @@ import { Menu } from "./nav.jsx";
 import { Hello } from "./Hello.jsx";
 import { Cards } from "./Card/Cards.jsx";
 import { VacCards } from "./VacCard/VacCards.jsx";
+import { Converter } from "./Converter/Converter.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/vacation",
         element: <VacCards />,
+      },
+      {
+        path: "/converter",
+        element: <Converter />,
       },
     ],
   },

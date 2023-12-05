@@ -19,6 +19,9 @@ export function Menu() {
           <li>
             <Link to="/vacation">Vacation</Link>
           </li>
+          <li>
+            <Link to="/converter">Converter</Link>
+          </li>
         </ul>
       </nav>
       <Outlet />
