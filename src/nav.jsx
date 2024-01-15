@@ -22,6 +22,9 @@ export function Menu() {
           <li>
             <Link to="/converter">Converter</Link>
           </li>
+          <li>
+            <Link to="/search">Search</Link>
+          </li>
         </ul>
       </nav>
       <Outlet />
